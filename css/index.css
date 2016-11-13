@@ -1,4 +1,6 @@
-* {
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -9,6 +11,8 @@ body {
 
 h1 {
   color: white;
+  margin-bottom: 3px;
+  margin-top: 2px;
 }
 
 div {
@@ -16,6 +20,10 @@ div {
   height: 15px;
   width: 15px;
   display: inline-block;
+  margin 0;
+  padding: 0;
+  line-height: 0%;
+  border: .001px solid black;
 }
 span {
   display: inline-block;
@@ -27,6 +35,10 @@ span {
   border: 2px solid white;
 }
 
+.row {
+  margin: 0;
+  padding: 0;
+}
 .custom {
   color: white;
 }
@@ -84,4 +96,14 @@ span {
 #container {
   width: 800px;
   margin: 0 auto;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+@media only screen and (max-width:960px) {
+  body {
+    overflow-y: scroll;
+  }
 }
