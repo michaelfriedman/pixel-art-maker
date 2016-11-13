@@ -7,13 +7,7 @@
 body {
   background-color: black;
   text-align: center;
-  cursor:
-}
-
-h1 {
-  color: white;
-  margin-bottom: 3px;
-  margin-top: 2px;
+  overflow-y: hidden;
 }
 
 div {
@@ -26,80 +20,93 @@ div {
   line-height: 0%;
   border: .001px solid black;
 }
+
+h1 {
+  color: white;
+  margin-bottom: 3px;
+  margin-top: 2px;
+}
+
+
+input{
+  cursor: pointer;
+}
+
 span {
   display: inline-block;
   height: 30px;
   width: 30px;
   border-radius: 100%;
-}
-.selected {
-  border: 2px solid white;
+  cursor: pointer;
 }
 
-.row {
-  margin: 0;
-  padding: 0;
-}
 .custom {
   color: white;
 }
 
 .customCursor {
-   cursor: url(/img/cursor.png), auto;
-}
-
-.red {
-  background-color: rgb(255, 0, 0);
-}
-
-.blue {
-  background-color: rgb(48, 6, 254);
-}
-
-.green {
-  background-color: green;
-}
-
-.orange {
-  background-color: orange;
-}
-.dodgerblue {
-  background-color: dodgerblue;
-}
-
-.mediumorchid {
-  background-color: mediumorchid;
-}
-
-.white {
-  background-color: white;
-}
-
-.tomato {
-  background-color: tomato;
-}
-.burlywood {
-  background-color: burlywood;
-}
-
-.plum {
-  background-color: plum;
-}
-
-.sienna {
-  background-color: sienna;
-}
-
-.cyan {
-  background-color: cyan;
+  cursor: url(/img/cursor.png), auto;
 }
 
 .input-color {
   display: inline-block;
 }
 
-#result {
-  color: white;
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.selected {
+  border: 2px solid white;
+}
+
+.blue {
+  background-color: rgb(48, 6, 254);
+}
+
+.burlywood {
+  background-color: burlywood;
+}
+
+.cyan {
+  background-color: cyan;
+}
+
+.dodgerblue {
+  background-color: dodgerblue;
+}
+
+.green {
+  background-color: green;
+}
+
+.mediumorchid {
+  background-color: mediumorchid;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.plum {
+  background-color: plum;
+}
+
+.red {
+  background-color: rgb(255, 0, 0);
+}
+
+.sienna {
+  background-color: sienna;
+}
+
+.tomato {
+  background-color: tomato;
+}
+
+.white {
+  background-color: white;
 }
 
 #container {
@@ -107,8 +114,12 @@ span {
   margin: 0 auto;
 }
 
-body {
-  overflow-y: hidden;
+#colorIndicator {
+ border: 2px solid white;
+}
+
+#result {
+  color: white;
 }
 
 @media only screen and (max-width:960px) {

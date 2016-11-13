@@ -6,22 +6,22 @@ In this exercise, you'll create your own pixel art maker which will allow a user
 
 More specifically, your pixel art maker should allow a user to do the following.
 
-1. Start with a blank canvas of pixels.
-1. Select a brush color from a palette of colors.
-1. Paint the pixels on the canvas using the brush color.
-1. Repeat step 2.
+[x] 1. Start with a blank canvas of pixels.
+[x] 1. Select a brush color from a palette of colors.
+[x] 1. Paint the pixels on the canvas using the brush color.
+[x] 1. Repeat step 2.
 
 Here's a development workflow that we recommend you use.
 
-1. Fork and clone this repository.
-1. Create a small, 2x2 grid canvas made up of white, square `div` tags with a border.
-1. Add an event listener to each `div` so when clicked the background turns red.
-1. Create a small palette of two colors (e.g. red and blue) below the canvas using more `div` tags.
-1. Add an event listener to these `div` tags so when clicked the brush color is saved.
-1. Expand the dimensions of the pixel canvas.
+[x] 1. Fork and clone this repository.
+[x] 1. Create a small, 2x2 grid canvas made up of white, square `div` tags with a border.
+[x] 1. Add an event listener to each `div` so when clicked the background turns red.
+[x] 1. Create a small palette of two colors (e.g. red and blue) below the canvas using more `div` tags.
+[x] 1. Add an event listener to these `div` tags so when clicked the brush color is saved.
+[x] 1. Expand the dimensions of the pixel canvas.
 1. Expand the palette with more colors. (i.e. red, orange, yellow, green, blue, purple, brown, gray, black, white, etc.)
-1. Expand the palette with a brush color indicator.
-1. Improve the look and feel of the canvas and color palette. Be careful not to break your program's behavior!
+[x] 1. Expand the palette with a brush color indicator.
+[x] 1. Improve the look and feel of the canvas and color palette. Be careful not to break your program's behavior!
 
 **TIP:** Check out [this handy tool](http://www.colors.commutercreative.com/grid/) to see a list of all the named colors in CSS.
 
@@ -32,11 +32,11 @@ Improve the mouse so it behaves like a real paintbrush. In other words, allow th
 **TIP:** The [`mouseenter` event](https://developer.mozilla.org/en-US/docs/Web/Events/mouseenter) doesn't bubble up the DOM tree.
 
 ### Bonus 2
-
+[x]
 Add a color picker which allows the user to select any brush color using the [`<input type="color">` tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color) and the [`change` event](https://developer.mozilla.org/en-US/docs/Web/Events/change).
 
 ### Deployment
-
+[x]
 Review the following articles on the Surge platform and then deploy your website to production.
 
 - [Getting started with Surge](http://surge.sh/help/getting-started-with-surge)
@@ -44,4 +44,5 @@ Review the following articles on the Surge platform and then deploy your website
 
 A good domain name for this project is `USERNAME-pixel-art-maker.surge.sh` where `USERNAME` is your GitHub username in all **lowercase** letters. Once deployed and everything works as you expect, copy the URL to your site and paste it below.
 
-PASTE YOUR PRODUCTION URL HERE
+[x] PASTE YOUR PRODUCTION URL HERE
+michaelfriedman-pixel-art-maker.surge.sh
