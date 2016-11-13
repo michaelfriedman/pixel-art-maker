@@ -1,11 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: rgb(36, 52, 138);
+  background-color: black;
+  text-align: center;
 }
 
-canvas {
+h1 {
+  color: white;
+}
+
+div {
   background-color: white;
-  border-radius: 5%;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+}
+span {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+}
+.selected {
+  border: 2px solid white;
 }
 
-.div-canvas {
+.custom {
+  color: white;
 }
+
+.red {
+  background-color: rgb(255, 0, 0);
+}
+
+.blue {
+  background-color: rgb(48, 6, 254);
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+.dodgerblue {
+  background-color: dodgerblue;
+}
+
+.mediumorchid {
+  background-color: mediumorchid;
+}
+
+.white {
+  background-color: white;
+}
+
+.tomato {
+  background-color: tomato;
+}
+.burlywood {
+  background-color: burlywood;
+}
+
+.plum {
+  background-color: plum;
+}
+
+.sienna {
+  background-color: sienna;
+}
+
+.cyan {
+  background-color: cyan;
+}
+
+#result {
+  color: white;
+}
+
+#container {
+  width: 800px;
+  margin: 0 auto;
+}*/
