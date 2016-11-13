@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+aside {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  float: left;
+  margin-left: 10px;
+  clear: both;
+}
+
 body {
   background-color: black;
   text-align: center;
@@ -34,8 +43,8 @@ input{
 
 span {
   display: inline-block;
-  height: 30px;
-  width: 30px;
+  height: 15px;
+  width: 15px;
   border-radius: 100%;
   cursor: pointer;
 }
@@ -116,6 +125,13 @@ span {
 
 #colorIndicator {
  border: 2px solid white;
+ border-radius: 0%
+}
+
+#colorIndicatorMessage {
+  color: white;
+  display: inline;
+  padding-right: 10px
 }
 
 #result {
