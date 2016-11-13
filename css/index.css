@@ -7,6 +7,7 @@
 body {
   background-color: black;
   text-align: center;
+  cursor:
 }
 
 h1 {
@@ -41,6 +42,10 @@ span {
 }
 .custom {
   color: white;
+}
+
+.customCursor {
+   cursor: url(/img/cursor.png), auto;
 }
 
 .red {
@@ -87,6 +92,10 @@ span {
 
 .cyan {
   background-color: cyan;
+}
+
+.input-color {
+  display: inline-block;
 }
 
 #result {
