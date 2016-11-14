@@ -13,10 +13,10 @@
     colorIndicatorMessage.textContent = `Brush Indicator: ${currentColor}`
   }
   const createPallette = (arr) => {
-    for (let i = 0; i < namedColors.length; i++) {
+    for (const namedColor of namedColors) {
       const swatch = document.createElement('span')
       document.getElementById('pallette').appendChild(swatch)
-      swatch.style.backgroundColor = namedColors[i]
+      swatch.style.backgroundColor = namedColor
       if (swatch.style.backgroundColor === 'black') {
         swatch.style.border = '1px solid white'
       }
@@ -38,18 +38,12 @@
   for (const color of colors) {
     color.addEventListener('click', () => {
       currentColor = color.style.backgroundColor
-      console.log(currentColor)
       colorIndicator.style.backgroundColor = currentColor
       brushIndicator()
     })
   }
   for (const div of divs) {
     div.addEventListener('click', () => {
-      div.style.backgroundColor = currentColor
-    })
-  }
-  for (const div of divs) {
-    div.addEventListener('mousedown', 'mouseenter', 'mouseleave', 'mouseup', () => {
       div.style.backgroundColor = currentColor
     })
   }
