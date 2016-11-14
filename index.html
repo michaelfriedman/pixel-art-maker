@@ -7,24 +7,26 @@
   <title>Pixel Art Maker</title>
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
   <script defer src="js/index.js"></script>
 </head>
   <body class="customCursor">
     <aside>
-      <p id="colorIndicatorMessage"></p>
-      <span id="colorIndicator"></span>
+
     </aside>
     <section id="container">
       <header>
         <h1>Pixel Art Maker</h1>
       </header>
-      <section id="pixel-grid">
-      </section>
+      <div id="pixel-grid">
+      </div>
       <section id="pallette">
       </section>
       <section class="input-color">
-          <p class="custom input-color">Select A Custom Color --> </p><input id="customColor" class="input-color" type="color" name="name" value="">
+        <p id="colorIndicatorMessage">Brush Indicator:</p>
+        <span id="colorIndicator" class="customCursor"></span>&nbsp &nbsp
+          <p class="custom input-color">Color Wheel --></p> &nbsp <input id="customColor" class="input-color" type="color" name="name" value="#ffffff">
       </section>
     </section>
   </body>

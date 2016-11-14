@@ -6,17 +6,17 @@
 
 aside {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   display: block;
   float: left;
-  margin-left: 10px;
+  margin-left: 50px;
   clear: both;
 }
 
 body {
-  background-color: black;
   text-align: center;
   overflow-y: hidden;
+  background-color: black;
 }
 
 div {
@@ -24,21 +24,25 @@ div {
   height: 15px;
   width: 15px;
   display: inline-block;
-  margin 0;
+  margin: 0;
   padding: 0;
   line-height: 0%;
-  border: .001px solid black;
+  /*border: 1px solid lightgray;*/
+  position: relative;
+  vertical-align: sub;
 }
 
 h1 {
   color: white;
-  margin-bottom: 3px;
-  margin-top: 2px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  font-family: 'Press Start 2P';
 }
 
 
 input{
   cursor: pointer;
+  border-radius: 8px;
 }
 
 span {
@@ -47,6 +51,7 @@ span {
   width: 15px;
   border-radius: 100%;
   cursor: pointer;
+  margin: 0 1px;
 }
 
 .custom {
@@ -66,56 +71,11 @@ span {
   padding: 0;
 }
 
-.selected {
-  border: 2px solid white;
-}
+#pixel-grid {
+  background-color: black !imporant;
 
-.blue {
-  background-color: rgb(48, 6, 254);
-}
-
-.burlywood {
-  background-color: burlywood;
-}
-
-.cyan {
-  background-color: cyan;
-}
-
-.dodgerblue {
-  background-color: dodgerblue;
-}
-
-.green {
-  background-color: green;
-}
-
-.mediumorchid {
-  background-color: mediumorchid;
-}
-
-.orange {
-  background-color: orange;
-}
-
-.plum {
-  background-color: plum;
-}
-
-.red {
-  background-color: rgb(255, 0, 0);
-}
-
-.sienna {
-  background-color: sienna;
-}
-
-.tomato {
-  background-color: tomato;
-}
-
-.white {
-  background-color: white;
+  width: 795px;
+  height: 495px;
 }
 
 #container {
@@ -124,8 +84,10 @@ span {
 }
 
 #colorIndicator {
- border: 2px solid white;
- border-radius: 0%
+  height: 20px;
+  width: 20px;
+  border: 1px solid white;
+  border-radius: 0%
 }
 
 #colorIndicatorMessage {
@@ -136,6 +98,11 @@ span {
 
 #result {
   color: white;
+}
+
+#pallette {
+  margin-top: 15px;
+  background-color: black;
 }
 
 @media only screen and (max-width:960px) {
