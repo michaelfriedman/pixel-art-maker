@@ -1,11 +1,11 @@
 (() => {
   'use strict';
-  const colors = document.getElementsByTagName('span');
-  const divs = document.getElementsByTagName('div');
+  const pixelGrid = document.getElementById('pixel-grid');
   let currentColor = null;
   const colorIndicator = document.getElementById('colorIndicator');
   let customColor = document.getElementById('customColor').value;
   const input = document.getElementById('customColor');
+  const palette = document.getElementById('palette');
   const namedColors = ['LightSalmon', 'Salmon', 'DarkSalmon', 'LightCoral',
     'IndianRed', 'Crimson', 'FireBrick', 'DarkRed', 'Red', 'Pink', 'LightPink',
     'HotPink', 'DeepPink', 'PaleVioletRed', 'MediumVioletRed', 'OrangeRed',
@@ -41,43 +41,39 @@
     colorIndicatorMessage.textContent = `Brush Indicator: ${currentColor}`;
   };
 
-  const createPallette = (arr) => {
+  (() => {
     for (const namedColor of namedColors) {
       const swatch = document.createElement('span');
 
-      document.getElementById('pallette').appendChild(swatch);
+      document.getElementById('palette').appendChild(swatch);
       swatch.style.backgroundColor = namedColor;
       if (swatch.style.backgroundColor === 'black') {
         swatch.style.border = '1px solid white';
       }
     }
-  };
+  })();
 
-  createPallette();
-  const createGrid = () => {
+  (() => {
     for (let i = 0; i < 1749; i++) {
       const pixel = document.createElement('div');
 
       document.getElementById('pixel-grid').appendChild(pixel);
     }
-  };
+  })();
 
-  createGrid();
   input.addEventListener('input', () => {
     customColor = document.getElementById('customColor').value;
     currentColor = customColor;
     brushIndicator();
   });
-  for (const color of colors) {
-    color.addEventListener('click', () => {
-      currentColor = color.style.backgroundColor;
-      colorIndicator.style.backgroundColor = currentColor;
-      brushIndicator();
-    });
-  }
-  for (const div of divs) {
-    div.addEventListener('click', () => {
-      div.style.backgroundColor = currentColor;
-    });
-  }
+
+  palette.addEventListener('click', (event) => {
+    currentColor = event.target.style.backgroundColor;
+    colorIndicator.style.backgroundColor = currentColor;
+    brushIndicator();
+  });
+
+  pixelGrid.addEventListener('click', (event) => {
+    event.target.style.backgroundColor = currentColor;
+  });
 })();
