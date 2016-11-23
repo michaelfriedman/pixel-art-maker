@@ -6,6 +6,7 @@
   let customColor = document.getElementById('customColor').value;
   const input = document.getElementById('customColor');
   const palette = document.getElementById('palette');
+  let isMouseDown = false;
   const namedColors = ['LightSalmon', 'Salmon', 'DarkSalmon', 'LightCoral',
     'IndianRed', 'Crimson', 'FireBrick', 'DarkRed', 'Red', 'Pink', 'LightPink',
     'HotPink', 'DeepPink', 'PaleVioletRed', 'MediumVioletRed', 'OrangeRed',
@@ -56,7 +57,6 @@
   (() => {
     for (let i = 0; i < 1749; i++) {
       const pixel = document.createElement('div');
-
       document.getElementById('pixel-grid').appendChild(pixel);
     }
   })();
@@ -75,5 +75,19 @@
 
   pixelGrid.addEventListener('click', (event) => {
     event.target.style.backgroundColor = currentColor;
+  });
+
+  pixelGrid.addEventListener('mousedown', () => {
+    isMouseDown = true;
+  });
+
+  window.addEventListener('mouseup', () => {
+    isMouseDown = false;
+  });
+
+  pixelGrid.addEventListener('mousemove', (event) => {
+    if (isMouseDown) {
+      event.target.style.backgroundColor = currentColor;
+    }
   });
 })();
